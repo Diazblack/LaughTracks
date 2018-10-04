@@ -1,2 +1,5 @@
 class Special < ActiveRecord::Base
-end 
+  validates_presence_of :name
+
+  belongs_to :comedians
+end

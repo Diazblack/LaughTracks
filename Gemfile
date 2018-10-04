@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'simplecov', require: false, group: :test
 gem 'activerecord'
 gem 'pg', '~> 0.18'
 gem 'sinatra', require: 'sinatra/base'

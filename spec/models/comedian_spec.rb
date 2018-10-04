@@ -10,6 +10,11 @@ RSpec.describe Comedian do
         comic = Comedian.create(name: 'Mitch Hedberg')
         expect(comic).to_not be_valid
       end
+
+      it 'should be invalid if missing an city that was born' do
+        comic = Comedian.create(name: 'Mitch Hedberg')
+        expect(comic).to_not be_valid
+      end
     end
   end
 end

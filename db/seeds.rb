@@ -12,7 +12,7 @@ comedian_8 = Comedian.create(name: 'Robin Williams', age: 63, city: 'Chicago' )
 comedian_9 = Comedian.create(name: 'Iliza Shlesinger', age: 35, city: 'Manhattan' )
 comedian_10 = Comedian.create(name: 'Gabriel Iglesias', age: 42, city: 'San Diego' )
 comedian_11 = Comedian.create(name: 'Tina Fey', age: 48, city: 'Upper Darby' )
-comedian_11 = Comedian.create(name: 'Tiffany Haddish', age: 38, city: 'Los Angeles' )
+comedian_12 = Comedian.create(name: 'Tiffany Haddish', age: 38, city: 'Los Angeles' )
 
 comedian_1.specials.create(name: 'live in Houston', run_time_length: 65, year: 2001, image_url: 'https://media.vanityfair.com/photos/5b869da54242d94606988403/master/w_1920,c_limit/louis-ck-comedy-cellar-noam-dworman-interview.jpg')
 comedian_1.specials.create(name: 'Chewed up', run_time_length: 80, year: 2008, image_url: 'https://consequenceofsound.files.wordpress.com/2017/11/screen-shot-2017-11-10-at-1-42-22-pm.png?w=1614')

@@ -1,13 +1,22 @@
-<% comedians.each do |com| %>
+<% @comedians.each do |comedian| %>
 
 <div class="individual_comedian">
-
+  <div class="comedian_attr">
+    <ul>
+      <li><%= comedian.name %></li>
+      <li><%= comedian.age %></li>
+      <li><%= comedian.city %></li>
+      <% comedian.specials.each do |special| %>
+      <div class="special_attr">
+        <ul>
+          <li><%= special.name %></li>
+          <li><%=  special.year %> </li>
+          <li> <img src="<%= special.image_url %>" alt="#{<%= special.name %>}"> </li>
+          <li><%= special.run_time_length %> minutes</li>
+        </ul>
+      </div>
+      <% end %>
+    </ul>
+  </div>
 </div>
-  <ul>
-    <li><%= com.name %></li>
-    <li><%= com.age %></li>
-    <li><%= com.city %></li>
-    <li><%= com.specials %></li>
-  </ul>
-
 <% end %>

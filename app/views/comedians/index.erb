@@ -1,12 +1,19 @@
-<!-- <div class="Statistics">
+<div class="Statistics">
   <h1>Statistics</h1>
   <div class="average_age">
-    <h2><%= @comedians.average_age %> minutes </h2>
+    <h2>Average Age</h2>
+    <h3><%= @comedians_specials.average_age %> Years Old </h3>
   </div>
-  <div class="">
+  <div class="average_time_length">
+    <h2>Average Run Time Length</h2>
+    <h3><%= @comedians_specials.specials.time_length_average %> minutes</h3>
+  </div>
+  <div class="sum_of_all_tv_specials">
+    <h2>Number of specials</h2>
+    <h3><%= @comedians_specials.specials.all.count %></h3>
+  </div>
 
-  </div>
-</div> -->
+</div>
 
 <% @comedians.each do |comedian| %>
 

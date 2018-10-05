@@ -3,8 +3,8 @@ class Special < ActiveRecord::Base
 
   belongs_to :comedian
 
-  def self.time_length_sum
-    sum(:run_time_length)
+  def self.time_length_average
+    average(:run_time_length)
   end
 
   def self.all_count

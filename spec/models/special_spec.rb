@@ -17,9 +17,9 @@ RSpec.describe Special do
       comedian_2 = Comedian.create(name: 'Bill Cosby', age: 81, city: 'Philadelphia' )
       comedian_2.specials.create(name: 'Bill Cosby', run_time_length: 100, year: 1987, image_url: 'https://media.vanityfair.com/photos/5baa6c046e085a486b37c027/master/w_1920,c_limit/bill-cosby-sentencing.jpg')
 
-      to_expect = Special.time_length_sum
+      to_expect = Special.time_length_average
 
-      expect(to_expect).to eq(315)
+      expect(to_expect).to eq(78.75)
     end
 
     it 'should get the sum of all comedians specials' do

@@ -6,4 +6,8 @@ class Special < ActiveRecord::Base
   def self.time_length_sum
     sum(:run_time_length)
   end
+
+  def self.all_count
+    all.count
+  end
 end

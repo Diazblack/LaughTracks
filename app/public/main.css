@@ -1,0 +1,76 @@
+body {
+  background-image: url("https://comedycook.files.wordpress.com/2013/03/up_comedy_club_int_002.jpg");
+  background-size: 1000px, 500px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+}
+img {
+  width: 80px;
+  height: 60px;
+  border: 1px solid black;
+  border-radius: 2px;
+  margin: 5px;
+}
+
+.Header {
+  grid-column: span 3;
+  grid-row: span 3;
+  font-size: 75px;
+  color: #FEE7A7;
+}
+
+.Statistics {
+  grid-column: span 3;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  color: #FCFBE7;
+  background-color: rgba(201, 7, 2, 0.7);
+  border-radius: 10px;
+  grid-gap: 10px;
+}
+
+.Statistics h1 {
+  grid-column: span 3;
+  grid-gap: 10px;
+  font-size: 20px;
+  color: #BF9858;
+}
+
+.comedians_cities {
+  grid-column: span 3;
+  display: grid;
+  grid-template-columns: auto;
+}
+
+.comedians_cities h2 {
+  grid-column: span 8;
+}
+
+.Statistics div h3 {
+  font-size: 12px;
+}
+
+.individual_comedian {
+  background-color: rgba(51, 83, 37, 0.6);
+  border-radius: 5px;
+  padding: 3px;
+  color: #AA7D4C;
+  font-size:13px;
+}
+
+.new_comedian_form {
+  background-image: url("https://rfclipart.com/image2/big/fb-d7-04/microphone-on-red-curtain-stand-up-night-lettering-comedian-night-show-Download-Royalty-free-Vector-File-EPS-311893.jpg");
+  background-size: 1000px, 500px;
+  background-repeat: no-repeat;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-gap: 30px;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: repeat(3, 2fr);
+}

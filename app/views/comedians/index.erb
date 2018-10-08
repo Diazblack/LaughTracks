@@ -1,0 +1,48 @@
+<div class="Header">
+  <h1>Comedians!!!</h1>
+</div>
+
+<div class="Statistics">
+  <h1>Statistics</h1>
+  <div class="average_age">
+    <h2>Average Age</h2>
+    <h3><%= @comedians.average_age %> Years Old </h3>
+  </div>
+  <div class="average_time_length">
+    <h2>Average Run Time Length</h2>
+    <h3><%= @comedians_specials.time_length_average %> minutes</h3>
+  </div>
+  <div class="sum_of_all_tv_specials">
+    <h2>Number of specials</h2>
+    <h3><%= @comedians_specials.all_count %></h3>
+  </div>
+  <div class="comedians_cities">
+    <h2>Cities</h2>
+    <% @comedians.unique_cities.each do |city|%>
+      <h3><%= city%></h3>
+    <% end %>
+  </div>
+</div>
+
+<% @comedians.each do |comedian| %>
+
+<div class="individual_comedian">
+  <div class="comedian_attr">
+    <ul>
+      <li><%= comedian.name %></li>
+      <li><%= comedian.age %></li>
+      <li><%= comedian.city %></li>
+      <% comedian.specials.each do |special| %>
+      <div class="special_attr">
+        <ul>
+          <li><%= special.name %></li>
+          <li><%=  special.year %> </li>
+          <li> <img src="<%= special.image_url %>" alt="#{<%= special.name %>}"> </li>
+          <li><%= special.run_time_length %> minutes</li>
+        </ul>
+      </div>
+      <% end %>
+    </ul>
+  </div>
+</div>
+<% end %>

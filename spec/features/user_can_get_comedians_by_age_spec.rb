@@ -17,12 +17,13 @@ RSpec.describe 'User can see comedians by an specific age in page' do
     expect(page).to_not have_content(comedian_1.age)
     expect(page).to_not have_content(comedian_1.name)
     expect(page).to_not have_content(comedian_1.city)
-    binding.pry
-    expect(page).to have_content(comedian_2.specials.name)
-    expect(page).to_not have_content(comedian_1.specials.name)
+    expect(page).to have_content(comedian_2.specials.last.name)
+    expect(page).to_not have_content(comedian_1.specials[0].name)
+    expect(page).to_not have_content(comedian_1.specials[1].name)
+    expect(page).to_not have_content(comedian_1.specials.last.name)
 
     within '.average_age' do
-      expect(page).to have_content("#{comedian_2.city} Years Old")
+      expect(page).to have_content("81.0 Years Old")
     end
 
     within '.average_time_length' do

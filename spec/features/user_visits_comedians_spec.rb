@@ -30,8 +30,6 @@ RSpec.describe 'User visits comedians page' do
     cities = comedian_1.city
 
     visit '/comedians'
-    
-    save_and_open_page
 
     expect(page).to have_content(age_average_number)
     expect(page).to have_content(average_time)
